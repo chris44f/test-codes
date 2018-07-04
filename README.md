@@ -14,4 +14,4 @@ My name is Chris, and I'm keen to learn (but im a goofball :@)
 
 ##### Challenge 1
 
-* Go to assets/html folder and recreate this inside the html.index folder
+* Go to assets/html folder and recreate this inside `index.html` file inside the `/html` folder
