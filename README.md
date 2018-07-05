@@ -16,3 +16,8 @@ zero
 ##### Challenge 1
 
 * Go to assets/html folder and recreate this inside `index.html` file inside the `/html` folder
+
+* Feedback
+
+- Never use tables in HTML. certainly not needed here.
+- is this your finished article?
