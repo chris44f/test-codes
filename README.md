@@ -17,7 +17,7 @@ zero
 
 * Go to assets/html folder and recreate this inside `index.html` file inside the `/html` folder
 
-* Feedback
+##### Feedback
 
-- Never use tables in HTML. certainly not needed here.
-- is this your finished article?
+* Never use tables in HTML. certainly not needed here.
+* is this your finished article?
