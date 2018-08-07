@@ -1,0 +1,50 @@
+#boxC {
+  width: 100px;
+  height: 100px;
+  background-color: Cyan;
+  border-width: 2px;
+  border-style: solid;
+  border-color: CadetBlue;
+  text-align: center;
+  line-height: 100px;
+}
+#boxH {
+  width: 100px;
+  height: 100px;
+  background-color: HoneyDew;
+  border-width: 2px;
+  border-style: solid;
+  border-color: HotPink; /* oo gay */
+  text-align: center;
+  line-height: 100px;
+}
+#boxR {
+  width: 100px;
+  height: 100px;
+  background-color: RoyalBlue;
+  border-width: 2px;
+  border-style: solid;
+  border-color: RebeccaPurple; /* yar good color name*/
+  text-align: center;
+  line-height: 100px;
+}
+#boxI {
+  width: 100px;
+  height: 100px;
+  background-color: IndianRed;
+  border-width: 2px;
+  border-style: solid;
+  border-color: Ivory;
+  text-align: center;
+  line-height: 100px;
+}
+#boxS {
+  width: 100px;
+  height: 100px;
+  background-color: SpringGreen;
+  border-width: 2px;
+  border-style: solid;
+  border-color: SteelBlue;
+  text-align: center;
+  line-height: 100px;
+}
