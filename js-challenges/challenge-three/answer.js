@@ -6,4 +6,4 @@ function totalArray(){
   // your code goes here
 }
 
-reverse(arrayToTotal) // outputs 356
+reverse(arrayToTotal) // outputs 366
