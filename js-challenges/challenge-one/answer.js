@@ -2,8 +2,9 @@
 
 const stringToReverse = 'featley'
 
-function reverse(){
-  // your code goes here
+function reversedString(a){
+  var array = a.split("")
+  console.log(array.reverse)
 }
 
 reverse(stringToReverse) // outputs yeltaef
