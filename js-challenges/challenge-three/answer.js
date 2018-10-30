@@ -9,5 +9,4 @@ function totalArray(a){
   }
   document.write(total)
   }
-
 reverse(arrayToTotal) // outputs 366
