@@ -2,8 +2,12 @@
 
 const arrayToTotal = [1, 5, 10, 100, 250]
 
-function totalArray(){
-  // your code goes here
+function totalArray(arr){
+  return arr.reduce((a, b) => {
+    return a+b
+  })
 }
 
-reverse(arrayToTotal) // outputs 366
+const answer = totalArray(arrayToTotal) // outputs 366
+
+console.log(answer)

@@ -2,8 +2,10 @@
 
 const stringToReverse = 'featley'
 
-function reverse(){
-  // your code goes here
+function reverse(str){
+  return Array.from(str).reverse().join('')
 }
 
-reverse(stringToReverse) // outputs yeltaef
+const answer = reverse(stringToReverse) // outputs yeltaef
+
+console.log(answer)
