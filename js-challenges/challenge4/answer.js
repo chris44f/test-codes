@@ -10,8 +10,8 @@ function longestWord(word){
   function compareLength(c){
     if (c.length>b.length){b=c}
   }
-  console.log(b)
-}
+  return b
+} 
 
 // do not alter the below part
 console.log(longestWord('hello!goodybe,yo')) // outputs: goodbye
@@ -19,5 +19,4 @@ console.log(longestWord('rich-chris,andy')) // outputs:  chris
 console.log(longestWord('football!golf,tennis?cricket,polo')) // outputs: football
 console.log(longestWord('a.b,lol')) // outputs: lol
 
-//so not got the frig why the console log within the longestWord function works,
-//but then the console.log in lines 17-20 dont. ??
+//so how come console.log(console.log(b)) don't work? lol
