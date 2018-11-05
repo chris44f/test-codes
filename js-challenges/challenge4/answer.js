@@ -11,20 +11,40 @@ function longestWord(word){
   let a = word.split(/\W/)
   let b = "1"
   let longWords = []
+  let description
   a.forEach(function(c){
     switch (true) { // you should probably switch on an actual expression rather than a boolean
-      case c.length>b.length:
-        b=c // you should do b = c
+      case c.length > b.length:
+        b = c // you should do b = c
         longWords.push(c)
+        if (c.length > 1){
+          description = " is the longest word and is " + c.length + " characters"
+        }
+        else if (c.length = 1) {
+          description = " is the longest word and is 1 character"
+        }
         break;
-      case c.length==b.length: // you should do c.length === b.length
-        b=c
+      case c.length === b.length: // you should do c.length === b.length
+        b = c
         longWords.push(c)
+        if (c.length > 1){
+          description = " are the longest words and are " + c.length + " characters"
+        }
+        else if (c.length = 1) {
+          description = " are the longest words and are 1 character"
+        }
         break;
     }
   }
   )
-return "The longest string is " + longWords.join(", ")
+    function capFirstLetter(str){
+      let capsFirst = str.charAt(0).toUpperCase()
+      let largeArray = str.split("")
+      largeArray[0] = capsFirst
+      return largeArray.join("")
+    }
+  let stri = longWords.join(", ")
+  return capFirstLetter(stri) + description
 }
 
 // TESTS
