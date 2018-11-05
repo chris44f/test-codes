@@ -8,11 +8,21 @@
 function longestWord(word){
   let a = word.split(/\W/)
   let b = "1"
-  a.forEach(compareLength)
-  function compareLength(c){
-    if (c.length>b.length){b=c}
+  let longWords = []
+  a.forEach(function(c){
+    switch (true) {
+      case c.length>b.length:
+        b=c
+        longWords.push(c)
+        break;
+      case c.length==b.length:
+        b=c
+        longWords.push(c)
+        break;
+    }
   }
-  return b
+  )
+return "The longest string is " + longWords.join(", ")
 }
 
 // TESTS
