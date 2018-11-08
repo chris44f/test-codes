@@ -2,8 +2,11 @@
 
 const arrayToTotal = [1, 5, 10, 100, 250]
 
-function totalArray(){
-  // your code goes here
-}
-
+function totalArray(a){
+  var total = 0
+  for (i = 0; i < a.length; i+=1) {
+  total += arrayToTotal[i]
+  }
+  document.write(total)
+  }
 reverse(arrayToTotal) // outputs 366
