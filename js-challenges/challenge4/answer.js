@@ -16,31 +16,19 @@ function longestWord(word){
   let longWords = []
   let description
   a.forEach(function(c){
-    switch (true) { // you should probably switch on an actual expression rather than a boolean
-      case c.length > b.length:
+    if (c.length > b.length) {
         b = c
         longWords.push(c)
-        if (c.length > 1){
-          description = singularDesc + c.length + " characters"
-        }
-        else if (c.length = 1) {
-          description = singularDesc + c.length + " character"
-        }
-        break;
-      case c.length === b.length:
+        description = (c.length > 1) ?
+        singularDesc + c.length + " characters" : singularDesc + c.length + " character"
+    } else if (c.length === b.length) {
         b = c
         longWords.push(c)
-        if (c.length > 1){
-          description = multipleDesc + c.length + " characters"
+        description = (c.length > 1) ?
+        multipleDesc + c.length + " characters" : multipleDesc + c.length + " character"
         }
-        else if (c.length = 1) {
-          description = multipleDesc + c.length + " character"
-        }
-        break;
     }
-  }
   )
-
   let stri = longWords.join(", ")
   return capFirstLetter(stri) + description
 }
