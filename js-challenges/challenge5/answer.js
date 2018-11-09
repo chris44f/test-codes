@@ -1,26 +1,27 @@
 function letterCounter(str){
-  let arr = str.split("")
+  let stringToArray = Array.from(str)
   let b = 0
   let i = 0
-  let strip = []
-  arr.forEach(function(value,index,array) {
+  let counterWithDuplicates = []
+  stringToArray.forEach(function(value,index,array) {
     let a = str.charAt(index)
     for (i=0; i < str.length; i += 1){
-      if ( a === str.charAt(i)){
+      if ( a === str.charAt(i)) {
         b += 1
       }
     }
-    strip.push(b+value)
+    counterWithDuplicates.push(b+value)
     b = 0
-  })
-  strip.forEach(function(val,indi,arry) {
-    let duplo = strip.lastIndexOf(val)
-    if (indi !== duplo) {
-      strip.splice(duplo,1)
-    }
-  })
-return strip
+  } )
+  return removeDuplicates(counterWithDuplicates)
 }
+
+
+function removeDuplicates(arr){
+  arr.filter(function(value,index,array) {
+    if(arr.indexOf(value)==index){
+      console.log(value)}})}
+
 
 console.log(letterCounter('aaaeeffaa')) // 5a2e2f
 console.log(letterCounter('abc')) // 1a1b1c
